@@ -21,7 +21,7 @@ export default function TimeTracker() {
                         </svg>
                     </div>
                     <div className="border-x border-dashed py-2 font-sans my-2">
-                        <div className="px-[25px] z-0">
+                        <div className="px-[15px] z-0">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-currency-pound" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity="0.5">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M17 18.5a6 6 0 0 1 -5 0a6 6 0 0 0 -5 .5a3 3 0 0 0 2 -2.5v-7.5a4 4 0 0 1 7.45 -2m-2.55 6h-7" />

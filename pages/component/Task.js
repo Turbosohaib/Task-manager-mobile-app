@@ -5,7 +5,7 @@ export default function Task() {
     const currentDate = new Date();
 
     return <>
-        <div className="w-full h-[35%] mb-5 bg-white border border-gray-300 border-b-4">
+        <div className="w-full h-[31%] mb-5 bg-white border border-gray-300 border-b-4">
             <div className="w-full h-[40px] bg-gray-200 border-y border-gray-200 flex justify-between items-center">
                 <div className="text-gray-400 text-sm px-5">
                     Fri, Sep 8
