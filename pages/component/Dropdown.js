@@ -23,7 +23,7 @@ function Dropdown({ projects, handleChange, trackTime, setTrackTime }) {
                 <div onClick={toggleDropDown} className="text-blue-600 cursor-pointer rounded-md">
                     Project     {/* {trackTime.project || "Project"} */}
                 </div>
-                {isOpen && <div className="absolute right-5 mt-2 py-2 w-[350px] bg-white rounded-md shadow-lg">
+                {isOpen && <div className="absolute right-0 mt-2 py-2 w-[350px] bg-white rounded-md shadow-lg">
                     <input className='py-2 px-2 mx-2 my-2 w-[335px] border bg-gray-60' placeholder='Find Project'></input>
                     <ul>
                         {/* {projects.map((project) => ( */}
