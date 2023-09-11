@@ -23,7 +23,7 @@ Run:
  ![Alt text](image.png)
 
 Or you can see the deployed App:
-```
+
 https://task-manager-mobile-app.vercel.app/
-```
+
 
