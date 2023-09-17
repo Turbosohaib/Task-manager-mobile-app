@@ -5,7 +5,7 @@ export default function Task() {
     const currentDate = new Date();
 
     return <>
-        <div className="w-full h-[32%] mb-5 bg-white border border-gray-300 border-b-4">
+        <div className="w-full h-[36%] mb-5 bg-white border border-gray-300 border-b-4">
             <div className="w-full h-[40px] bg-gray-200 border-y border-gray-200 flex justify-between items-center">
                 <div className="text-gray-400 text-sm px-5">
                     Fri, Sep 8
@@ -38,8 +38,8 @@ export default function Task() {
                     </button>
                 </div>
             </div>
-            <div className=" border-t border-gray-300 ">
-                <div className="flex justify-between items-center pt-1">
+            <div className="bottom-0  border-t border-gray-300 ">
+                <div className="flex justify-between items-center">
                     <div className="flex items-center">
                         <div className="py-1.5 mt-[2px] px-5 border-r border-dashed border-gray-300">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-currency-pound" width="27" height="27" viewBox="0 0 24 24" strokeWidth="1" stroke="#5C5CFF" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity="4">

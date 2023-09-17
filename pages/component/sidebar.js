@@ -6,17 +6,15 @@ function Sidebar() {
 
     const [openSideBar, setOpenSideBar] = useState(false);
 
-    const showSideBar = () => {
-        setOpenSideBar(!openSideBar)
-    }
+
 
     return <>
         <div className="flex justify-between items-center w-full rounded-t shadow-md bg-white px-2 py-2 border-l-4 border-blue-400" >
             <div className="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" onClick={showSideBar} className="px-3 mt-[4px] cursor-pointer" height="20px" viewBox="0 0 448 512" opacity="0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" onClick={() => setOpenSideBar(!openSideBar)} className="px-3 mt-[4px] cursor-pointer" height="20px" viewBox="0 0 448 512" opacity="0.5">
                     <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                 </svg>
-                <div className="text-xl font-semibold text-blue-600/75 cursor-pointer">Task Manager</div>
+                <div className="text-lg font-semibold text-blue-600/75 cursor-pointer">Task Manager</div>
             </div>
             <div className="flex">
                 <div className="border-x border-dashed py-2 top-0 right-0">
@@ -30,15 +28,15 @@ function Sidebar() {
                 </div>
             </div>
 
-            {openSideBar && <div className="fixed inset-0 bg-black bg-opacity-75 transition-opacity z-20">
-                <aside className="fixed inset-y-0 left-0 bg-white shadow-md max-h-screen w-50  border-l-4 border-blue-400 rounded-l ">
-                    <div className="flex flex-col justify-between h-full">
+            <div className={`${openSideBar ? "fixed inset-0 bg-black bg-opacity-75 transition-opacity z-20" : ""} `}>
+                <aside className={`fixed inset-y-0 left-0 bg-white shadow-md max-h-screen  ease-in-out duration-300 ${openSideBar ? "w-[190px]" : "w-0"}  `}>
+                    <div className={`flex flex-col  justify-between h-full border-l-4 border-blue-400 rounded-l ${openSideBar ? "" : "hidden"}`}>
                         <div className="flex-grow">
                             <div className="flex items-center px-4 py-6 text-center border-b">
-                                <svg xmlns="http://www.w3.org/2000/svg" onClick={showSideBar} className="px-3 mt-[4px] cursor-pointer" height="20px" viewBox="0 0 448 512" opacity="0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" onClick={() => setOpenSideBar(!openSideBar)} className="px-3 mt-[4px] cursor-pointer" height="20px" viewBox="0 0 448 512" opacity="0.5">
                                     <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                                 </svg>
-                                <h1 className="text-xl font-semibold leading-none"><span className="text-blue-600/75">Task Manager</span></h1>
+                                <h1 className="text-md font-semibold leading-none"><span className="text-blue-600/75">Task Manager</span></h1>
                             </div>
                             <div className="p-4">
                                 <ul className="space-y-1">
@@ -85,7 +83,7 @@ function Sidebar() {
                         </div>
                     </div>
                 </aside>
-            </div>}
+            </div>
         </div>
     </>
 }
