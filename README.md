@@ -22,4 +22,8 @@ Run:
  Install mobile app from the top icon:
  ![Alt text](image.png)
 
+Or you can see the deployed App:
+
+https://task-manager-mobile-app.vercel.app/
+
 
